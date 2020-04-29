@@ -1,5 +1,5 @@
 body {
-	background: lightblue;
+	background: rgb(42, 15, 68);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -7,4 +7,6 @@ body {
 	margin: 0;
 	font-size: 40px;
 	font-family: Arial;
+	color: black;
+	text-shadow: 1px 1px 1px black;
 }
