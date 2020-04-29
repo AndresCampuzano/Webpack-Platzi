@@ -1,12 +1,13 @@
 import '../css/index.css';
-import '../js/text';
-import text from '../js/text';
+import search from './search';
+import render from './render';
 
-text();
+const id = prompt('Quien es ese pokemon?');
 
-if (module.hot) {
-	module.hot.accept('./text.js', function () {
-		console.log('La pagina se ha recargado en caliente🔥🔥🔥');
-		text();
+search(id)
+	.then((data) => {
+		render(data);
+	})
+	.catch(() => {
+		console.log('No encontrado y/o error');
 	});
-}
