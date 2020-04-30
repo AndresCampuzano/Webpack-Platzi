@@ -20,7 +20,11 @@
 		"build:prepro": "webpack-dev-server --config ./preprocesadores/webpack.config.js --open",
 		"build:prepro-dist": "webpack --config ./preprocesadores/webpack.config.js --open",
 		"build:prevent-duplication": "webpack-dev-server --config ./prevent-duplication-react/webpack.config.js --open",
-		"build:prevent-duplication-dist": "webpack --config ./prevent-duplication-react/webpack.config.js --open"
+		"build:prevent-duplication-dist": "webpack --config ./prevent-duplication-react/webpack.config.js --open",
+		"build:dll": "webpack --config ./dll/webpack.dll.config.js --open",
+		"build:prevent-duplication-fast-dist": "webpack --config ./dll/webpack.config.js --open",
+		"build:dynamic:dll": "webpack --config ./dynamic-imports/webpack.dll.config.js --open",
+		"build:dynamic": "webpack --config ./dynamic-imports/webpack.config.js --open"
 	},
 	"keywords": [
 		"webpack",
