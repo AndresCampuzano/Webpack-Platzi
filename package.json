@@ -18,7 +18,9 @@
 		"build:loader": "webpack-dev-server --config ./url-loader/webpack.config.js --open",
 		"build:loader-dist": "webpack --config ./url-loader/webpack.config.js --open",
 		"build:prepro": "webpack-dev-server --config ./preprocesadores/webpack.config.js --open",
-		"build:prepro-dist": "webpack --config ./preprocesadores/webpack.config.js --open"
+		"build:prepro-dist": "webpack --config ./preprocesadores/webpack.config.js --open",
+		"build:prevent-duplication": "webpack-dev-server --config ./prevent-duplication-react/webpack.config.js --open",
+		"build:prevent-duplication-dist": "webpack --config ./prevent-duplication-react/webpack.config.js --open"
 	},
 	"keywords": [
 		"webpack",
